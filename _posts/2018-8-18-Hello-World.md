@@ -15,6 +15,7 @@ markdownなので箇条書きできるよ
 
 画像のリンクは気をつけてね
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+
+![_config.yml](../images/config.png)
 
 テストでした

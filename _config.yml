@@ -84,3 +84,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+# Set Timezone
+timezone: Asia/Tokyo

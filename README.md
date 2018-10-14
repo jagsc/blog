@@ -53,7 +53,7 @@ Markdownの書き方は https://qiita.com/kamorits/items/6f342da395ad57468ae3 �
 
 ```
 $ docker pull jekyll/jekyll:pages
-$ docker run --rm -v `pwd`:/srv/jekyll -p 4000:4000 jekyll/jekyll:pages jekyll serve --watch
+$ docker run --rm -it -v `pwd`:/srv/jekyll -p 4000:4000 jekyll/jekyll:pages jekyll serve -w
 ```
 
 ここにアクセス

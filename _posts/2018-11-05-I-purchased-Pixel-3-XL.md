@@ -22,8 +22,7 @@ categories:
 |  電池容量  |  2570mAh  |  3430mAh  |
 |  CPU  |  2.2GHz＋1.6GHz クアッドコア  |  2.5 GHz + 1.6 GHz オクタコア  |
 |  メモリ(RAM)  |  3GB  |  4GB  |
-|  メインカメラ  |  有効画素数約2300万画素  |  12.2 メガピクセル（デュアル ピクセル）  |
-|  OS  |  Android 8.0  |  Android 9.0  |  
+|  メインカメラ  |  有効画素数約2300万画素  |  12.2 メガピクセル（デュアル ピクセル）  | 
 
 ※1:Xperia X Performance SO-04H|主な使用|ソニーモバイルコミュニケーションズ、https://www.sonymobile.co.jp/xperia/docomo/so-04h/spec.html より引用  
 ※2:Pixel 3 の仕様を比較 - カメラ、画面、電池、プロセッサ - Googleストア、https://store.google.com/jp/product/pixel_3_specs より引用  

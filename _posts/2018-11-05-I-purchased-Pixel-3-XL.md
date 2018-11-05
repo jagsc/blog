@@ -2,7 +2,7 @@
 layout: post
 title: Pixel3 XLを購入しました！
 author: jagsc
-permalink: s/Piexel3/pixel3/
+permalink: /Piexel3/
 layout: post
 categories:
   - 活動記録
@@ -14,7 +14,7 @@ categories:
 
 まずはそれぞれの簡単なカタログスペックから  
 
-|  項目  |  Xperia X Performance  |  Pixel3 XL  |
+|  項目  |  Xperia X Performance※1  |  Pixel3 XL※2  |
 | ---- | ---- |  ----  |
 |  サイズ(高さ×幅×厚さ)  |  約144mm×約71mm×約8.6mm  |  158.0mm×76.7mm×7.9mm  |
 |  ディスプレイ  |  約5.0インチ  |  6.3インチ  |
@@ -25,6 +25,8 @@ categories:
 |  メインカメラ  |  有効画素数約2300万画素  |  12.2 メガピクセル（デュアル ピクセル）  |
 |  OS  |  Android 8.0  |  Android 9.0  |  
 
+※1:Xperia X Performance SO-04H|主な使用|ソニーモバイルコミュニケーションズ、https://www.sonymobile.co.jp/xperia/docomo/so-04h/spec.html より引用  
+※2:Pixel 3 の仕様を比較 - カメラ、画面、電池、プロセッサ - Googleストア、https://store.google.com/jp/product/pixel_3_specs より引用  
 より詳しいスペックを知りたい人は公式ホームページへお願いします。  
 
 

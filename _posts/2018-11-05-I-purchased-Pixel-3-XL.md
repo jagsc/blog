@@ -2,7 +2,7 @@
 layout: post
 title: Pixel3 XLを購入しました！
 author: jagsc
-permalink: /Piexel3/
+permalink: /Pixel3/
 layout: post
 categories:
   - 活動記録

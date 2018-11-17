@@ -1,30 +1,18 @@
 defaults: &defaults
-  working_directory: ~/repo
+  working_directory: /srv/jekyll/
 version: 2
 jobs:
   build:
     <<: *defaults
     docker:
-      - image: jekyll/jekyll
+      - image: jekyll/jekyll:pages
     environment:
-      BUNDLE_PATH: ~/repo/vendor/bundle
+      BUNDLE_PATH: /srv/jekyll/vendor/bundle
     steps:
       - checkout
       - run:
-          name: HTMLProofer tests
-          command: |
-            bundle exec htmlproofer ./_site \
-              --allow-hash-href \
-              --check-favicon  \
-              --check-html \
-              --disable-external
-      - save_cache:
-          key: rubygems-v1-{{ checksum "Gemfile.lock" }}
-          paths:
-            - vendor/bundle
-      - run:
           name: Jekyll build
-          command: bundle exec jekyll build
+          command: jekyll build
       - persist_to_workspace:
           root: ./
           paths:

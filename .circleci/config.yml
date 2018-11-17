@@ -29,4 +29,5 @@ workflows:
       - build:
         　filters:
           　branches:
-            　only: master
+            　only: 
+                - master

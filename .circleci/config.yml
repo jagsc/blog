@@ -11,8 +11,8 @@ jobs:
     steps:
       - checkout
       - run:
-        name: install essential for htmlproofer
-        commnad: apk add --update build-base libffi-dev libxml2-dev libxslt-dev
+          name: install essential for htmlproofer
+          command: apk add --update build-base libffi-dev libxml2-dev libxslt-dev
       - run:
           name: Install nokogiri
           command: |

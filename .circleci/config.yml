@@ -11,6 +11,31 @@ jobs:
     steps:
       - checkout
       - run:
+        name: install essential for htmlproofer
+        commnad: apk add --update build-base libffi-dev libxml2-dev libxslt-dev
+      - run:
+          name: Install nokogiri
+          command: |
+           gem install nokogiri \
+             -- --use-system-libraries \
+             --with-xml2-config=/usr/bin/xml2-config \
+             --with-xslt-config=/usr/bin/xslt-config
+      - run:
+          name: Bundle Install
+          command: bundle check || bundle install
+      - run:
+          name: HTMLProofer tests
+          command: |
+            bundle exec htmlproofer ./_site \
+              --allow-hash-href \
+              --check-favicon  \
+              --check-html \
+              --disable-external
+      - save_cache:
+          key: rubygems-v1-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - run:
           name: Jekyll build
           command: jekyll build
       - persist_to_workspace:

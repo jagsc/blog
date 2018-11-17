@@ -1,6 +1,11 @@
 ---
 layout: post
 title: ブログを移行しました
+thumbnail: images/migrate-blog/thumbnail.png
+permalink: /migrate-blog/
+author: jagsc
+categories:
+  - 活動記録
 ---
 
 ブログを移行しました．

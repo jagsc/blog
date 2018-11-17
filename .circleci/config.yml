@@ -24,6 +24,9 @@ jobs:
             - _site
 workflows:
   version: 2
-  test-deploy:
+  test-build:
     jobs:
       - build
+        filters:
+          branches:
+            only: master

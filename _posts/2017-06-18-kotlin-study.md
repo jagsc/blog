@@ -22,4 +22,4 @@ Kotlinは5月のGoogle IOでAndroidのアプリ開発でのファーストクラ
 
 勉強会の様子
 
-<a href="../images/wp-content/uploads/2017/06/kotlin_study.jpg"><img src="../images/wp-content/uploads/2017/06/kotlin_study.jpg" alt="" width="240" height="320" class="alignnone size-full wp-image-698" /></a>
+![kotlin_study](../images/wp-content/uploads/2017/06/kotlin_study.jpg)

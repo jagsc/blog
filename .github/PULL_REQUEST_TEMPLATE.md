@@ -1,4 +1,4 @@
-Fixes #(Issueの番号)
+Fix #(Issueの番号)
 
 ## 変更内容
 

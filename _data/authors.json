@@ -1,0 +1,15 @@
+{
+    "takanakahiko":{
+        "display_name":"takanaakhiko",
+        "description":"よろしくお願いいたします．",
+        "image":"images/authors/takanakahiko.jpg",
+        "twitter":"takanakahiko"
+    },
+    "jagsc":{
+        "display_name":"日本Androidの会 学生部",
+        "description":"日本Androidの会学生部です．勉強会の運営やイベントへの出展，合宿等を行っています．よろしくお願いいたします．",
+        "image":"images/authors/jagsc.png",
+        "twitter":"StudentAndroid",
+        "facebook":"android.student.club"
+    }
+}

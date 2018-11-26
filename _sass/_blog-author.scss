@@ -1,0 +1,62 @@
+
+
+.author {
+    display: flex;
+    margin: 10px;
+    padding: 30px 30px 24px;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%2342ca18' fill-opacity='0.11'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    .image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 0 0 96px;
+        width: 96px;
+        margin-right: 16px;
+    }
+
+    .avatar {
+        vertical-align: bottom;
+        border-radius: 48px;
+    }
+
+    .text {
+        flex: 1 1 100%;
+
+        .name {
+            margin-bottom: 10px;
+            line-height: 1.4;
+            color: #505050;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .description {
+            line-height: 1.6;
+            color: #505050;
+            font-size: 14px;
+        }
+
+        .links {
+            margin-top: 16px;
+            list-style: none;
+            list-style-image: none;
+
+            li {
+                float: left;
+                margin-right: 8px;
+                margin-bottom: 4px;
+            }
+        }
+    }
+}

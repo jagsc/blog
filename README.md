@@ -3,9 +3,9 @@
 
 https://jagsc.github.io/blog
 
-# 記事を書く
+## 記事を書く
 
-## ファイルの作成
+### ファイルの作成
 
 `_posts/` 内に `YYYY-MM-DD-タイトル.md` というファイルを作ります．
 
@@ -15,7 +15,7 @@ https://jagsc.github.io/blog
 |MM|2桁の月です|
 |DD|2桁の日です|
 
-## 情報の入力
+### 情報の入力
  
 記事の情報をそのファイル(`YYYY-MM-DD-タイトル.md`)に書きます．
 
@@ -28,7 +28,7 @@ title: 「記事名」
 ---
 ```
 
-## 記事の執筆
+### 記事の執筆
 
 その下からmarkdownという形式で記事を作ります．
 
@@ -47,17 +47,23 @@ Markdownの書き方は https://qiita.com/kamorits/items/6f342da395ad57468ae3 �
 のようにすることで画像を設置します．
 
 
-# ローカルで動かす
+## ローカルで動かす
 
 こうして
 
-```
-$ docker pull jekyll/jekyll:pages
+```bash
 $ docker run --rm -it -v `pwd`:/srv/jekyll -p 4000:4000 jekyll/jekyll:pages jekyll serve -w
 ```
 
 ここにアクセス
 
 ```
-http://0.0.0.0:4000/
+http://0.0.0.0:4000/blog/
+```
+
+## テスト
+
+```bash
+$ docker run --rm -it -v `pwd`:/srv/jekyll -p 4000:4000 jekyll/jekyll:pages jekyll build
+$ docker run --rm -it -v `pwd`:/srv/jekyll -p 4000:4000 jekyll/jekyll:pages /usr/gem/bin/htmlproofer ./_site --allow-hash-href --check-html --disable-external
 ```

@@ -17,7 +17,8 @@ jobs:
             /usr/gem/bin/htmlproofer ./_site \
               --allow-hash-href \
               --check-html \
-              --disable-external
+              --disable-external \
+              --url-swap '^/blog:'
       - persist_to_workspace:
           root: ./
           paths:

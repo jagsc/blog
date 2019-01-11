@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run:
           name: Jekyll build
-          command: jekyll build
+          command: jekyll build -d _site/blog 
       - run:
           name: HTMLProofer tests
           command: |

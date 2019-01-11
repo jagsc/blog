@@ -80,4 +80,3 @@ $ cd blog
 $ git remote add upstream %コピーしたURL%
 ```
 
-メモ:帰りに人参を買う

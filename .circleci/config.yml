@@ -10,14 +10,15 @@ jobs:
       - checkout
       - run:
           name: Jekyll build
-          command: jekyll build -d _site/blog 
+          command: jekyll build
       - run:
           name: HTMLProofer tests
           command: |
             /usr/gem/bin/htmlproofer ./_site \
               --allow-hash-href \
               --check-html \
-              --disable-external
+              --disable-external \
+              --url-swap '^/blog:'
       - persist_to_workspace:
           root: ./
           paths:

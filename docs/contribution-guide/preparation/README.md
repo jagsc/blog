@@ -37,11 +37,11 @@ Forkしたら，**Fork先のリポジトリ**に移動するはずです．
 
 ![img](./img3.jpg)
 
-### Fork先のリポジトリをcloneする
+### Fork先のリポジトリをcloneする
 
-> **Fork先のリポジトリ**を自分のPCにcloneし，ローカルリポジトリを用意します
+> **Fork先のリポジトリ**を自分のPCにcloneし，ローカルリポジトリを用意します
 
-**Fork先のリポジトリ**(`あなたのID/blog`)のページにアクセスし，「Clone or download」→「copy」を選択し，clone用のurlをコピーします．
+**Fork先のリポジトリ**(`あなたのID/blog`)のページにアクセスし，「Clone or download」→「copy」を選択し，clone用のurlをコピーします．
 
 ![img](./img4.jpg)
 
@@ -70,7 +70,7 @@ $ cd blog
 
 ![img](./img5.jpg)
 
-「Clone or download」→「copy」を選択し，clone用のurlをコピーします．
+「Clone or download」→「copy」を選択し，clone用のurlをコピーします．
 
 ![img](./img6.jpg)
 

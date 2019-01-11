@@ -1,4 +1,4 @@
-# Contribution Guide / 準備編
+# Contribution Guide / プルリクエストの準備編
 
 ## はじめに
 
@@ -26,16 +26,16 @@
 
 そこで，画面右上の「Fork」をクリックします．
 
-![](img.jpg)
+![img](./img.jpg)
 
 その後，自分のアカウントを選択することでForkすることができます．
 
-![](img2.jpg)
+![img](./img2.jpg)
 
 Forkしたら，**Fork先のリポジトリ**に移動するはずです．
 `あなたのID/blog` というリポジトリ名になっていることを確認してください．
 
-![](img3.jpg)
+![img](./img3.jpg)
 
 ### Fork先のリポジトリをcloneする
 
@@ -43,7 +43,7 @@ Forkしたら，**Fork先のリポジトリ**に移動するはずです．
 
 **Fork先のリポジトリ**(`あなたのID/blog`)のページにアクセスし，「Clone or download」→「copy」を選択し，clone用のurlをコピーします．
 
-![](img4.jpg)
+![img](./img4.jpg)
 
 次に，手元のPCで clone します．
 以下のコマンドを手元のターミナルで実行します．
@@ -68,11 +68,11 @@ $ cd blog
 
 まずは**Frok元のリポジトリ**(jagsc/blog)のページにアクセスます．
 
-![](img5.jpg)
+![img](./img5.jpg)
 
 「Clone or download」→「copy」を選択し，clone用のurlをコピーします．
 
-![](img6.jpg)
+![img](./img6.jpg)
 
 次に，以下のコマンドを手元のターミナルで実行します．
 

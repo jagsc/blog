@@ -2,7 +2,7 @@
 layout: post
 title: 2019年2月の定例ミーティングを行いました
 author: jagsc
-permalink: /february-meeting/
+permalink: /2019-february-meeting/
 layout: post
 categories:
   - 活動記録

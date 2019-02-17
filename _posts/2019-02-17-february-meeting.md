@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2月の定例ミーティングを行いました
+title: 2019年2月の定例ミーティングを行いました
 author: jagsc
 permalink: /february-meeting/
 layout: post

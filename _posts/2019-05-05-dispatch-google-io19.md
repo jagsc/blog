@@ -15,5 +15,5 @@ categories:
 後日、Android Bazaar and Conference 2019 Spring(ABC2019s)などのイベント等で報告を行う予定です。乞うご期待ください!
 
 - ABC2019s:
-  - 参加登録ページ(connpass): https://japan-android-group.connpass.com/event/125928/
-- Google I/O 2019: https://events.google.com/io/
+  - 参加登録ページ(connpass): [https://japan-android-group.connpass.com/event/125928/](https://japan-android-group.connpass.com/event/125928/)
+- Google I/O 2019: [https://events.google.com/io/](https://events.google.com/io/)

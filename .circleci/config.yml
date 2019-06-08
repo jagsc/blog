@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run:
           name: Posts filename check
-          command: find ./_posts/ -type f | grep -ve "[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}-.*\.md" - | xargs -0 --no-run-if-empty false
+          command: find ./_posts/ -type f | grep -ve "[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}-.*\.md" -
       - run:
           name: Jekyll build
           command: jekyll build

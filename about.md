@@ -4,12 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+ようこそ！日本Androidの会学生部のブログです．
 
-### More Information
+### 日本Androidの会 学生部 とは?
 
-A place to include any other types of information that you'd like to include about yourself.
+当組織はNPO法人 日本Androidの会を母体とした支部であり、本会の方々からの支援を受けながら学生が運営しております。
 
-### Contact me
+https://student.android-group.jp/about/
 
-[email@domain.com](mailto:email@domain.com)
+### 入部案内
+
+こちらをどうぞ
+https://student.android-group.jp/join/

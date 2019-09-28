@@ -1,11 +1,8 @@
-defaults: &defaults
-  working_directory: /srv/jekyll/
 version: 2
 jobs:
   build:
-    <<: *defaults
     docker:
-      - image: jekyll/jekyll:pages
+      - image: starefossen/github-pages
     steps:
       - checkout
       - run:
@@ -14,20 +11,22 @@ jobs:
       - run:
           name: Jekyll build
           command: jekyll build
-      - run:
-          name: HTMLProofer tests
-          command: |
-            /usr/gem/bin/htmlproofer ./_site \
-              --allow-hash-href \
-              --check-html \
-              --disable-external \
-              --url-swap '^/blog:'
       - persist_to_workspace:
           root: ./
           paths:
             - _site
+  test:
+    docker:
+      - image: 18fgsa/html-proofer
+    steps:
+      - attach_workspace:
+          at: ./
+      - run: htmlproofer ./_site --allow-hash-href --check-html --disable-external
 workflows:
   version: 2
   test-build:
     jobs:
       - build
+      - test:
+          requires:
+            - build

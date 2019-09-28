@@ -1,29 +1,25 @@
-defaults: &defaults
-  working_directory: /srv/jekyll/
 version: 2
 jobs:
   build:
-    <<: *defaults
     docker:
-      - image: jekyll/jekyll:pages
+      - image: starefossen/github-pages
     steps:
       - checkout
-      - run:
-          name: Jekyll build
-          command: jekyll build
-      - run:
-          name: HTMLProofer tests
-          command: |
-            /usr/gem/bin/htmlproofer ./_site \
-              --allow-hash-href \
-              --check-html \
-              --disable-external
+      - run: jekyll build
       - persist_to_workspace:
-          root: ./
+          root: /repo
           paths:
             - _site
+  test:
+    docker:
+      - image: circleci/ruby:2.5.0-node-browsers
+    steps:
+      - attach_workspace:
+          at: /repo
+      - run: html-proofer /repo/_site --allow-hash-href --check-html --disable-external
 workflows:
   version: 2
   test-build:
     jobs:
       - build
+      - test

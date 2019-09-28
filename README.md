@@ -52,7 +52,7 @@ Markdownの書き方は https://qiita.com/kamorits/items/6f342da395ad57468ae3 �
 こうして
 
 ```bash
-$ docker run --rm -it -v `pwd`:/srv/jekyll -p 4000:4000 jekyll/jekyll:pages jekyll serve -w
+$ docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
 ```
 
 ここにアクセス
@@ -64,6 +64,6 @@ http://0.0.0.0:4000/blog/
 ## テスト
 
 ```bash
-$ docker run --rm -it -v `pwd`:/srv/jekyll -p 4000:4000 jekyll/jekyll:pages jekyll build
-$ docker run --rm -it -v `pwd`:/srv/jekyll -p 4000:4000 jekyll/jekyll:pages /usr/gem/bin/htmlproofer ./_site --allow-hash-href --check-html --disable-external
+$ docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages jekyll build
+$ docker run -v "$PWD":/repo 18fgsa/html-proofer /repo/_site --allow-hash-href --check-html --disable-external
 ```

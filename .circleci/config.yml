@@ -16,7 +16,7 @@ jobs:
     steps:
       - attach_workspace:
           at: ./
-      - run: html-proofer /repo/_site --allow-hash-href --check-html --disable-external
+      - run: htmlproofer /repo/_site --allow-hash-href --check-html --disable-external
 workflows:
   version: 2
   test-build:

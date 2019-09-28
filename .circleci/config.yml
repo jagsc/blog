@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run: jekyll build
       - persist_to_workspace:
-          root: /repo
+          root: ./
           paths:
             - _site
   test:
@@ -15,7 +15,7 @@ jobs:
       - image: 18fgsa/html-proofer
     steps:
       - attach_workspace:
-          at: /repo
+          at: ./
       - run: html-proofer /repo/_site --allow-hash-href --check-html --disable-external
 workflows:
   version: 2

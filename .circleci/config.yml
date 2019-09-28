@@ -5,7 +5,12 @@ jobs:
       - image: starefossen/github-pages
     steps:
       - checkout
-      - run: jekyll build
+      - run:
+          name: Posts filename check
+          command: find ./_posts/ -type f ! -regex ".*/[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}-.*\.md" 2>&1 | xargs -0 --no-run-if-empty false
+      - run:
+          name: Jekyll build
+          command: jekyll build
       - persist_to_workspace:
           root: ./
           paths:

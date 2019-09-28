@@ -12,7 +12,7 @@ jobs:
             - _site
   test:
     docker:
-      - image: circleci/ruby:2.5.0-node-browsers
+      - image: 18fgsa/html-proofer
     steps:
       - attach_workspace:
           at: /repo
@@ -22,6 +22,6 @@ workflows:
   test-build:
     jobs:
       - build
-      - test
+      - test:
           requires:
             - build

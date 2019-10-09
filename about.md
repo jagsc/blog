@@ -10,9 +10,9 @@ permalink: /about/
 
 当組織はNPO法人 日本Androidの会を母体としたワーキンググループ(WG)であり、本会の方々からの支援を受けながら学生が運営しております。
 
-https://student.android-group.jp/about/
+<https://student.android-group.jp/about/>
 
 ### 入部案内
 
 こちらをどうぞ
-https://student.android-group.jp/join/
+<https://student.android-group.jp/join/>
